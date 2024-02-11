@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Prediction</title>
+<center>
+<h1>Target Prediction Using Machine Learning</h1>
+</center>
+
+<style> 
+    body { 
+        background-color: #10e6a2;
+        
+        
+    }
+
+
+  form-group.c1,
+  form-group.c2{
+    display:inline-block;
+    width:48%;
+    vertical-align: top;
+  }
+
+    input[type=text] {
+      width: 30%;
+      padding: 12px 15px;
+      margin: auto;
+      box-sizing: border-box;
+      border:black;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      
+      display: grid;
+    }
+    input[type=submit] {
+        background-color: #f30303;
+        border: none;
+        color: white;
+        padding: 25px 100px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+    div{
+
+        height: 250px;
+
+        background: rgb(11, 203, 180);
+
+        border: 10px ridge rgb(0, 4, 3);
+
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+<form action="{{url_for('predict')}}" method="post">
+
+<input type="text" name="T1" placeholder="T1" required="required" size="50"> <br>
+<input type="text" name="T2" placeholder="T2" required="required" size="50"> <br>
+<input type="text" name="T3" placeholder="T3" required="required" size="50"> <br>
+<input type="text" name="T4" placeholder="T4" required="required" size="50"> <br>
+<input type="text" name="T5" placeholder="T5" required="required" size="50"> <br>
+<input type="text" name="T6" placeholder="T6" required="required" size="50"> <br>
+<input type="text" name="T7" placeholder="T7" required="required" size="50"> <br>
+<input type="text" name="T8" placeholder="T8" required="required" size="50"> <br>
+<input type="text" name="T9" placeholder="T9" required="required" size="50"> <br>
+<input type="text" name="T10" placeholder="T10" required="required" size="50"> <br>
+<input type="text" name="T11" placeholder="T11" required="required" size="50"> <br>
+<input type="text" name="T12" placeholder="T12" required="required" size="50"> <br>
+<input type="text" name="T13" placeholder="T13" required="required" size="50"> <br>
+<input type="text" name="T14" placeholder="T14" required="required" size="50"> <br>
+<input type="text" name="T15" placeholder="T15" required="required" size="50"> <br>
+<input type="text" name="T16" placeholder="T16" required="required" size="50"> <br>
+<input type="text" name="T17" placeholder="T17" required="required" size="50"> <br>
+<input type="text" name="T18" placeholder="T18" required="required" size="50"> <br><br>
+<center>
+<input type="submit" value="Predict" size="100" width="50" height="50">
+</center>
+</form>
+<br>
+<center><h1>Predicted Target is {{Target}} </h1></center>
+<br>
+</body>
+</html>
